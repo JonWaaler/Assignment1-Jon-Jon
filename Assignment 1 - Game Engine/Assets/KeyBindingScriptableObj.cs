@@ -11,12 +11,4 @@ public class KeyBindingScriptableObj : ScriptableObject {
     public KeyCode right;
     public KeyCode fire;
 
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
 }

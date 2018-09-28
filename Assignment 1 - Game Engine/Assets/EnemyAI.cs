@@ -13,6 +13,7 @@ public class EnemyAI : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if(Player != null)
         gameObject.transform.Translate(-(transform.position - Player.transform.position).normalized * Time.deltaTime * 5f);
 	}
 
