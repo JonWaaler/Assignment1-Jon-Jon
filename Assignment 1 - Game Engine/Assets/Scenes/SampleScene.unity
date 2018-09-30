@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2340,6 +2340,49 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d24ed4d81f3620b47855a0d01a0f6842, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &894582418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 894582420}
+  - component: {fileID: 894582419}
+  m_Layer: 0
+  m_Name: Flyweight_Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &894582419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894582418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c1f2825f17ae74babfca8e49109140, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mat: {fileID: 2100000, guid: 0240705417e1cd540b7c6df8bff4d177, type: 2}
+  player: {fileID: 1346116327}
+  instMode: 0
+--- !u!4 &894582420
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 894582418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.4393663, z: -12.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 18
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &900220479
 GameObject:
   m_ObjectHideFlags: 0
@@ -3442,7 +3485,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1346116327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.45, z: -14.93}
+  m_LocalPosition: {x: 0, y: 1.15, z: -14.93}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2024887451}
@@ -4133,7 +4176,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1582013007}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c0eaf701a7e9ee1469861844cd7dd69e, type: 3}
   m_Name: 
@@ -4404,7 +4447,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4742425261767596, guid: 25dbcddffab5a21478d9119106693150, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4742425261767596, guid: 25dbcddffab5a21478d9119106693150, type: 2}
       propertyPath: m_LocalPosition.z
