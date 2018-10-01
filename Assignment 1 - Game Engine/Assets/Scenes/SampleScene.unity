@@ -203,7 +203,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &126071084
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1736,7 +1736,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &683900007
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3902,7 +3902,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1337952222
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4455,6 +4455,9 @@ MonoBehaviour:
   Achievement_Panel1: {fileID: 612437066}
   Achievement_Panel2: {fileID: 260730825}
   Achievement_Panel3: {fileID: 382745757}
+  spawner1: {fileID: 683900006}
+  spawner2: {fileID: 1337952221}
+  spawner3: {fileID: 126071083}
 --- !u!1 &1531003840
 GameObject:
   m_ObjectHideFlags: 0

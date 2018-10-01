@@ -30,4 +30,23 @@ namespace ObserverPattern
         }
 
     }
+    public class Score_HardMode : Observer
+    {
+        Text score;
+        GameObject spawner;
+        public Score_HardMode(Text score, GameObject spawner)
+        {
+            this.score = score;
+            this.spawner = spawner;
+        }
+
+        public override void OnNotify()
+        {
+            // Show the achievement to the player
+            spawner.SetActive(true);
+            // if this was a legit game you'd want to save that the player got the achievement
+            // so you could save that here
+        }
+
+    }
 }

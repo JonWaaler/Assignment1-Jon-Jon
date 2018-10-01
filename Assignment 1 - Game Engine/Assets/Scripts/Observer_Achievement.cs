@@ -20,11 +20,18 @@ namespace ObserverPattern
         public GameObject Achievement_Panel2;
         public GameObject Achievement_Panel3;
 
+        // Spawners
+        public GameObject spawner1;
+        public GameObject spawner2;
+        public GameObject spawner3;
+
         // I need more than 1 subject becuase i need to notify the object
         // at differnce values of score
         Subject subject1 = new Subject();
         Subject subject2 = new Subject();
         Subject subject3 = new Subject();
+
+        Subject subject_Spawner = new Subject();
 
         // Use this for initialization
         void Start()
@@ -40,12 +47,26 @@ namespace ObserverPattern
             subject1.AddObserver(score1);
             subject2.AddObserver(score2);
             subject3.AddObserver(score3);
+
+            Score_HardMode score_Hardmode1 = new Score_HardMode(score, spawner1);
+            Score_HardMode score_Hardmode2 = new Score_HardMode(score, spawner2);
+            Score_HardMode score_Hardmode3 = new Score_HardMode(score, spawner3);
+
+
+            subject_Spawner.AddObserver(score_Hardmode1);
+            subject_Spawner.AddObserver(score_Hardmode2);
+            subject_Spawner.AddObserver(score_Hardmode3);
             //we can have all scores for 1 subject, however this will activate them all at the same time if one of them is reached
         }
 
         // Update is called once per frame
         void Update()
         {
+            if(float.Parse(score.text) > 5)
+            {
+                subject_Spawner.Notify();
+            }
+
             // Set first achievement panel active etc...
             if (float.Parse(score.text) > 5)
             {
