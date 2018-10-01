@@ -48,10 +48,10 @@ namespace ObserverPattern
             subject2.AddObserver(score2);
             subject3.AddObserver(score3);
 
+            // Hard mode activates spawners
             Score_HardMode score_Hardmode1 = new Score_HardMode(score, spawner1);
             Score_HardMode score_Hardmode2 = new Score_HardMode(score, spawner2);
             Score_HardMode score_Hardmode3 = new Score_HardMode(score, spawner3);
-
 
             subject_Spawner.AddObserver(score_Hardmode1);
             subject_Spawner.AddObserver(score_Hardmode2);
@@ -62,6 +62,7 @@ namespace ObserverPattern
         // Update is called once per frame
         void Update()
         {
+            
             if(float.Parse(score.text) > 5)
             {
                 subject_Spawner.Notify();
