@@ -40,6 +40,7 @@ namespace ObserverPattern
             subject1.AddObserver(score1);
             subject2.AddObserver(score2);
             subject3.AddObserver(score3);
+            //we can have all scores for 1 subject, however this will activate them all at the same time if one of them is reached
         }
 
         // Update is called once per frame

@@ -7,13 +7,13 @@ namespace ObserverPattern
 {
     public class Subject
     {
-        List<Observer> observers = new List<Observer>();
+        List<Observer> observers = new List<Observer>(); // stores all observers
 
         public void Notify()
         {
             for (int i = 0; i < observers.Count; i++)
             {
-                observers[i].OnNotify();
+                observers[i].OnNotify();    //notifies
             }
         }
 
@@ -21,7 +21,5 @@ namespace ObserverPattern
         {
             observers.Add(observer);
         }
-
-        
     }
 }

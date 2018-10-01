@@ -34,7 +34,7 @@ public class UI_Manager : MonoBehaviour {
             print("Key Code: " + e.keyCode);
             tempKeycode = e.keyCode;
         }
-
+        
         fw.text = keybinds.forward.ToString();
         bw.text = keybinds.backwards.ToString();
         r.text = keybinds.right.ToString();
@@ -64,7 +64,6 @@ public class UI_Manager : MonoBehaviour {
         cmd_fire.Execute(fire, cmd_fire, keybinds, tempKeycode, checkNull);
 
         tempKeycode = KeyCode.None;
-        
 	}
 
     public void ToggleSettings()
@@ -75,9 +74,7 @@ public class UI_Manager : MonoBehaviour {
             Time.timeScale = 1;
         else
             Time.timeScale = 0;
-
     }
-
 
     // All the bellow functions are for setting up around to make the execute function
     // work properly for rebinding keys
@@ -118,7 +115,7 @@ public class UI_Manager : MonoBehaviour {
     }
 
 
-
+   // Undo Functions
     public void undo_Fore()
     {
         cmd_forward.UndoBind(oldKeycodes_forward, keybinds, fw);

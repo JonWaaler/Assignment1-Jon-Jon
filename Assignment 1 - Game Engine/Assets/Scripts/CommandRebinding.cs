@@ -23,7 +23,6 @@ namespace CommandPattern
                 txt.text = temp.ToString();
                 binds.forward = temp;
                 check = false;
-
             }
         }
 
@@ -31,9 +30,9 @@ namespace CommandPattern
         {
             if(oldKeys.Count >0)
             {
-                Debug.Log("Undoing Key bind");
-                txt.text = oldKeys.Peek().ToString();
-                keybinds.forward = oldKeys.Pop();
+                Debug.Log("Undoing Key bind");              // Adds to log 
+                txt.text = oldKeys.Peek().ToString();       // Peek at top of stack
+                keybinds.forward = oldKeys.Pop();           // Pop stack and used for key binding
             }
         }
 

@@ -10,5 +10,4 @@ public class KeyBindingScriptableObj : ScriptableObject {
     public KeyCode left;
     public KeyCode right;
     public KeyCode fire;
-
 }

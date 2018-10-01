@@ -36,7 +36,6 @@ public class flyweight_Spawner : MonoBehaviour
                     // when we can just access it
                     instance.AddComponent<MeshRenderer>().material = flyweight_mat;
                     instance.GetComponent<MeshRenderer>().material.mainTexture = flyWeightTex; // Using pre-made texture
-
                 }
             }
             if (instancingMode == InstancingMode.regular)
