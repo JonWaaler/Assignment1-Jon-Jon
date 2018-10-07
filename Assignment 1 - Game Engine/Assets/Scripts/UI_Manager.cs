@@ -31,7 +31,7 @@ public class UI_Manager : MonoBehaviour {
         Event e = Event.current;
         if (e.isKey)
         {
-            print("Key Code: " + e.keyCode);
+            //print("Key Code: " + e.keyCode);
             tempKeycode = e.keyCode;
         }
         
